@@ -1,0 +1,6 @@
+TABLE:TABLENAME
+  TABLE CELLS:
+    LETTER1 = "=EXNAME", False, False, False, Left, True, 0, Font Name, 1|1, %7.4f,\
+ True, ffffff, 000000, True
+  END
+END

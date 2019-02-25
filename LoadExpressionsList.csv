@@ -1,0 +1,15 @@
+TtotinexportVal,massFlowAve(Total Temperature in Stn Frame)@Induct_Inlet
+ptotinexportVal,massFlowAve(Total Pressure in Stn Frame)@Induct_Inlet
+pstatinexportVal,massFlowAve(Pressure)@Induct_Inlet
+TtotVoluteinexportVal,massFlowAve(Total Temperature in Stn Frame)@INLET_VOLUTE
+pstatVoluteinexportVal,massFlowAve(Pressure)@INLET_VOLUTE
+TtotoutexportVal,massFlowAve(Total Temperature in Stn Frame)@INLET_VOLUTE
+pstatoutexportVal,massFlowAve(Pressure)@Outduct_Outlet
+nCexportVal,rpm	
+mflowexportVal,(massFlow()@Induct_Inlet*4-massFlow()@Outduct_Outlet)/2
+mflowredexportVal,((massFlow()@Induct_Inlet*4-massFlow()@Outduct_Outlet)/2) * 101325 / massFlowAve(Total Pressure)@Induct_Inlet *sqrt( massFlowAve(Total Temperature)@Induct_Inlet/288.15)
+PRstatexportVal,massFlowAve(Pressure)@Outduct_Outlet/massFlowAve(Pressure)@Induct_Inlet
+mflowleakexportVal,(massFlow()@Rotor_LeakI Side 2 1  *9 - massFlow()@LeakI_Rotor Side 1   *9)/2
+TTotLeakInexportVal,massFlowAve(Total Temperature in Stn Frame)@LeakI_Rotor Side 1
+TTotLeakOutexportVal,massFlowAve(Total Temperature in Stn Frame)@Rotor_LeakI Side 1
+PolEffexportVal,(1.4-1)/1.4*ln(massFlowAve(Total Pressure)@Outduct_Outlet/massFlowAve(Total Pressure)@Induct_Inlet)/ln(massFlowAve(Total Temperature)@Outduct_Outlet/massFlowAve(Total Temperature)@Induct_Inlet)

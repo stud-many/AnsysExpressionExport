@@ -1,0 +1,2 @@
+>readstate filename=CST_PATH_FILE, mode=append, load=true, \
+keepexpressions=true

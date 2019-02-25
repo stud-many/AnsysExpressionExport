@@ -1,0 +1,6 @@
+COMMAND FILE:
+  CFX Post Version = VER
+END
+
+>load filename=LOADRES
+> update

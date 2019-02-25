@@ -1,0 +1,14 @@
+TABLE:TABLENAME
+  Export Table Only = True
+  Table Export HTML Title =
+  Table Export HTML Caption Position = Bottom
+  Table Export HTML Caption =
+  Table Export HTML Border Width = 1
+  Table Export HTML Cell Padding = 5
+  Table Export HTML Cell Spacing = 1
+  Table Export Lines = All
+  Table Export Trailing Separators = True
+  Table Export Separator = Tab
+END
+>table save=DIR_FILENAME, name=\
+TABLENAME

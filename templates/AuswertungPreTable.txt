@@ -1,0 +1,3 @@
+TABLE: TABLENAME
+  Table Exists = True
+END
